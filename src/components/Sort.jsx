@@ -6,7 +6,7 @@ function Sort() {
   const list = ['popular', 'price', 'name']
   const selectedName = list[selected]
 
-  const onHandleList =(i)=>{
+  const handleList =(i)=>{
     setSelected(i)
     setOpen(false)
   }
@@ -34,7 +34,7 @@ function Sort() {
           {list.map((name, i) => (                          // list rendering
             <li
               key={name}
-              onClick={() => onHandleList(i)}               // li rendering
+              onClick={() => handleList(i)}               // li rendering
               className={selected === i ? 'active' : ''}>
               {name}</li>
           ))}
