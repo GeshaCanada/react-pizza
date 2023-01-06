@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 function Categories() {
   const [activeIndex, setActiveIndex] = useState(0)
 
-  const categories = ['All' ,'Meat' ,'Vegetable','Grilled','Spicy' ,'Unavailable']  // arr with value
+  const categories = ['All' ,'Meat' ,'Vegetable','Grilled','Spicy' ,'Sold out']  // arr with value
 
   
   return (
